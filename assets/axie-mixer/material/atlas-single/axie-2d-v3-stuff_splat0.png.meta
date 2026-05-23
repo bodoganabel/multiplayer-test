@@ -1,5 +1,5 @@
 {
-  "ver": "1.0.25",
+  "ver": "1.0.27",
   "importer": "image",
   "imported": true,
   "uuid": "06499ad8-0b74-4e5d-8003-06c470c20cfb",
@@ -19,7 +19,7 @@
         "wrapModeT": "clamp-to-edge",
         "imageUuidOrDatabaseUri": "06499ad8-0b74-4e5d-8003-06c470c20cfb",
         "isUuid": true,
-        "visible": true,
+        "visible": false,
         "minfilter": "nearest",
         "magfilter": "nearest",
         "mipfilter": "none",

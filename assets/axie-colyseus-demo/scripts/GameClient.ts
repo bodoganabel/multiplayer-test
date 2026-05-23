@@ -118,13 +118,17 @@ export class GameClient extends Component {
     }
 
     onStateChange(state: any) {
-        let projectileState = state.projectile;
-        if (!projectileState) {
+        const projectileState = state.projectile;
+        const px = projectileState?.x;
+        const py = projectileState?.y;
+        const hasValidProjectile =
+            typeof px === 'number' && typeof py === 'number';
+        if (!hasValidProjectile) {
             this.projectile.active = false;
         }
         else {
             this.projectile.active = true;
-            this.projectile.setPosition(projectileState.x, projectileState.y, 0);
+            this.projectile.setPosition(px, py, 0);
         }
     }
 
